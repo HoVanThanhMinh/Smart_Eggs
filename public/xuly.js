@@ -79,13 +79,13 @@ function livingroomLight() {
 function livingroomAirConditioner() {
     var checkBox = document.getElementById("livingroomAirConditioner");
     if (checkBox.checked == true) {
-        var result3 = confirm("bạn có muốn điều hoà không ? \n nhấn OK để bật đèn cancel để hủy.");
+        var result3 = confirm("bạn có muốn bật quạt không ? \n nhấn OK để bật đèn cancel để hủy.");
         //alert('LED On')
         if (result3) {
             socket.emit("livingroomAirConditionerChange", "on")
         }
     } else {
-        var result4 = confirm("bạn có muốn tắt điều hoà  không ? \n nhấn OK để bật đèn cancel để hủy.");
+        var result4 = confirm("bạn có muốn tắt quạt  không ? \n nhấn OK để bật đèn cancel để hủy.");
         // alert('LED Off')
         if (result4) {
             socket.emit("livingroomAirConditionerChange", "off")
@@ -96,13 +96,13 @@ function livingroomAirConditioner() {
 function television() {
     var checkBox = document.getElementById("television");
     if (checkBox.checked == true) {
-        var result5 = confirm("bạn có muốn bật TV không ? \n nhấn OK để bật đèn cancel để hủy.");
+        var result5 = confirm("bạn có muốn bật hệ thống ấp trứng lên không ? \n nhấn OK để bật đèn cancel để hủy.");
         //alert('LED On')
         if (result5) {
             socket.emit("televisionChange", "on")
         }
     } else {
-        var result6 = confirm("bạn có muốn tắt TV không ? \n nhấn OK để bật đèn cancel để hủy.");
+        var result6 = confirm("bạn có muốn tắt hệ thống ấp trứng đi không ? \n nhấn OK để bật đèn cancel để hủy.");
         // alert('LED Off')
         if (result6) {
             socket.emit("televisionChange", "off")
@@ -113,13 +113,13 @@ function television() {
 function bedroomLight() {
     var checkBox = document.getElementById("bedroomLight");
     if (checkBox.checked == true) {
-        var result7 = confirm("bạn có muốn bật đèn ngủ không ? \n nhấn OK để bật đèn cancel để hủy.");
+        var result7 = confirm("bạn có muốn bật đèn không ? \n nhấn OK để bật đèn cancel để hủy.");
         if (result7) {
             //alert('LED On')
             socket.emit("bedroomLightChange", "on")
         }
     } else {
-        var result8 = confirm("bạn có muốn tắt đèn ngủ không ? \n nhấn OK để bật đèn cancel để hủy.");
+        var result8 = confirm("bạn có muốn tắt đèn  không ? \n nhấn OK để bật đèn cancel để hủy.");
         // alert('LED Off')
         if (result8) {
             socket.emit("bedroomLightChange", "off")
@@ -130,13 +130,13 @@ function bedroomLight() {
 function bedroomAirConditioner() {
     var checkBox = document.getElementById("bedroomAirConditioner");
     if (checkBox.checked == true) {
-        var result9 = confirm("bạn có muốn bật điều hoà phòng ngủ không ? \n nhấn OK để bật đèn cancel để hủy.");
+        var result9 = confirm("bạn có muốn bật quạt không ? \n nhấn OK để bật đèn cancel để hủy.");
         //alert('LED On')
         if (result9) {
             socket.emit("bedroomAirConditionerChange", "on")
         }
     } else {
-        var result10 = confirm("bạn có muốn tắt điều hoà phòng ngủ không ? \n nhấn OK để bật đèn cancel để hủy.");
+        var result10 = confirm("bạn có muốn bật quạt không ? \n nhấn OK để bật đèn cancel để hủy.");
         // alert('LED Off')
         if (result10) {
             socket.emit("bedroomAirConditionerChange", "off")
@@ -147,13 +147,13 @@ function bedroomAirConditioner() {
 function airVent() {
     var checkBox = document.getElementById("airVent");
     if (checkBox.checked == true) {
-        var result11 = confirm("bạn có muốn mở cửa thông gió không ? \n nhấn OK để bật đèn cancel để hủy.");
+        var result11 = confirm("bạn có muốn bật hệ thống ấp trứng không ? \n nhấn OK để bật đèn cancel để hủy.");
         //alert('LED On')
         if (result11) {
             socket.emit("airVentChange", "on")
         }
     } else {
-        var result12 = confirm("bạn có muốn đóng cửa thông gió không ? \n nhấn OK để bật đèn cancel để hủy.");
+        var result12 = confirm("bạn có muốn tắt hệ thống ấp trứng  không ? \n nhấn OK để bật đèn cancel để hủy.");
         // alert('LED Off')
         if (result12) {
             socket.emit("airVentChange", "off")
